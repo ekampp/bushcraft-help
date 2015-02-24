@@ -1,0 +1,30 @@
+source 'https://rubygems.org'
+ruby '2.2.0'
+
+gem 'rails', '4.2.0'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'unicorn-rails'
+gem 'mongoid'
+gem 'slim-rails'
+gem 'decent_exposure'
+gem 'mongoid-multitenancy'
+gem 'bcrypt'
+gem 'bugsnag'
+gem 'newrelic_rpm'
+gem 'redcarpet'
+
+group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+  gem 'foreman'
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'mongoid-rspec'
+  gem 'timecop'
+  gem 'simplecov', require: false
+  gem 'database_cleaner', github: 'DatabaseCleaner/database_cleaner'
+  gem 'faker', github: 'stympy/faker'
+end
